@@ -43,9 +43,10 @@
         .then(res => res.json())  
         .then(data => {
             if (data.vjmi) {
-                window.open(data.vjmi, "_blank");
+                window.location.href = data.vjmi;
             }
         })
     </script>
+    
 </body>
 </html>
